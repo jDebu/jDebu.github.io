@@ -79,27 +79,20 @@ div.controls select
     margin 5px auto 10px
     font-size 24px
 
-@media
-  (min-width
-    &:
-      768px)
-        .bs-glyphicons li {
+@media (min-width :768px)
+  .bs-glyphicons li 
     width 12.5%
 
-}
-  .btn-toolbar
-    & + .btn-toolbar
-      margin-top 10px
+.btn-toolbar + .btn-toolbar
+  margin-top 10px
 
-.dropdown
-  & > .dropdown-menu
-    position static
-    display block
-    margin-bottom 5px
+.dropdown > .dropdown-menu
+  position static
+  display block
+  margin-bottom 5px
 
-form
-  .row
-    margin-bottom 1em
+form.row
+  margin-bottom 1em
 
 .nav
   .dropdown-menu
