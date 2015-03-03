@@ -1,0 +1,111 @@
+azul = #2c3c51
+celeste = #0ca2ba
+verde = #16a286
+blanco = #ffffff
+plomo  = #d7dbdb
+negro  = #000000
+mymixins(var...)
+   -webkit-box-shadow var
+   -moz-box-shadow var
+   box-shadow var
+anchura(var)
+	width var
+
+fcolor(var)
+	background-color var !important
+.fazul
+	fcolor azul
+.fceleste
+	fcolor celeste
+.fverde
+	fcolor verde
+.fplomo
+	fcolor plomo
+
+tcolor(var)
+	color var !important
+.tazul
+	tcolor azul
+.tceleste
+	tcolor celeste
+.tverde
+	tcolor verde
+.tblanco
+	tcolor blanco
+.tnegro
+	tcolor negro
+
+.cristalab
+   mymixins 1px 2px 5px #eee
+.centrar
+	anchura 90%
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	body
+		padding-top 110px
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	body
+		padding-top 110px
+	.foto
+		margin 0 auto
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	body
+		padding-top 110px
+	.foto
+		margin 0 auto
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	body
+		padding-top 85px
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	body
+		padding-top 85px
+
+
+footer
+	margin-bottom 0px !important
+.voffset
+	margin-top 2px
+.voffset1  
+	margin-top 5px 
+.voffset2  
+	margin-top 10px 
+.voffset3  
+	margin-top 15px 
+.voffset4  
+	margin-top 25px 
+.voffset5  
+	margin-top 35px 
+.voffset6  
+	margin-top 60px 
+.voffset7  
+	margin-top 80px 
+.voffset8  
+	margin-top 100px 
+.voffset9  
+	margin-top 150px 
+
+.loffset
+	margin-left 2px
+.loffset1  
+	margin-left 5px 
+.loffset2  
+	margin-left 10px 
+.loffset3  
+	margin-left 15px 
+.loffset4  
+	margin-left 25px 
+.loffset5  
+	margin-left 35px 
+.loffset6  
+	margin-left 60px 
+.loffset7  
+	margin-left 80px 
+.loffset8  
+	margin-left 100px 
+.loffset9  
+	margin-left 125px 
+
