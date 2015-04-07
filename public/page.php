@@ -1,3 +1,4 @@
+<?php error_reporting(0);?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -171,20 +172,21 @@
                 <h3 class="visible-sm">+CONTACT</h3>
                 <h4 class="visible-xs">+CONTACT</h4>
                 <p>Déjame un mensaje utilizando el formulario de contacto.</p>
-                <form action="" role="form">
+                <form action="to_email.php" role="form" method="POST" name="form-contact">
                   <div class="form-group">
                     <label for="InputName">Nombre</label>
-                    <input type="text" id="InputName" placeholder="" class="form-control"/>
+                    <input type="text" name="nombre" id="InputName" placeholder="" class="form-control"/>
                   </div>
                   <div class="form-group">
                     <label for="InputEmail">Email</label>
-                    <input type="email" id="InputEmail" placeholder="" class="form-control"/>
+                    <input type="email" name="email" id="InputEmail" placeholder="" class="form-control"/>
                   </div>
                   <div class="form-group">
                     <label for="InputMessage">Mensaje</label>
-                    <textarea id="InputMessage" rows="3" class="form-control"></textarea>
+                    <textarea id="InputMessage" name="mensaje" rows="3" class="form-control"></textarea>
                   </div>
-                  <button type="submit" class="btn btn-primary">Enviar</button>
+                  <button type="submit" name="submit" class="btn btn-primary">Enviar</button>
+                  <p><?php echo $respuesta;?></p>
                 </form>
               </article>
             </div>
