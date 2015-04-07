@@ -225,3 +225,4 @@
     <script>function mediaqueryresponse(mql){ if (mql.matches){ /*if media query matches*/console.log("The condition " + mql.media + " has been met");$("#expert").addClass("row-eq-height");}else{$("#expert").removeClass("row-eq-height");/*document.getElementById("expert").addClass("row-eq-height");*/console.log("Condition not met yet");}}var mql = window.matchMedia("only screen and (min-width : 992px)");mediaqueryresponse(mql); /*call listener function explicitly at run time*/mql.addListener(mediaqueryresponse);/*attach listener function to listen in on state changes*/</script>
   </body>
 </html>
+<?php ?>
