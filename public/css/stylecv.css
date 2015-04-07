@@ -38,6 +38,9 @@
   body {
     padding-top: 110px;
   }
+  article.tblanco {
+    margin-top: 55px;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
@@ -47,6 +50,9 @@
   .foto {
     margin: 1em auto;
     text-align: center;
+  }
+  article.tblanco {
+    margin-top: 25px;
   }
 }
 /* Small Devices, Tablets */
