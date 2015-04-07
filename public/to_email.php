@@ -3,7 +3,7 @@ error_reporting(0);
 if(!isset($_POST['submit'])) {
   //no envia aun
   $respuesta="";
-  header('Location: index.php');
+  header('Location: page.php');
 }
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
@@ -11,7 +11,7 @@ $mensaje = $_POST['mensaje'];
 
 if (empty($nombre) || empty($email) || empty($mensaje)) {
   $respuesta="El nombre, email y mensaje se deben ingresar";
-  header('Location: index.php');
+  header('Location: page.php');
 }
 $email_from ="j2delgadob@gmail.com";
 $email_subject = "Formulario web";
